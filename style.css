@@ -8,10 +8,9 @@
 
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em auto;
+  font-family: "Google Sans Display",Roboto,Arial,sans-serif;
+  margin: 2em auto;  
   max-width: 80%;
-
 }
 
 h1 {
@@ -21,15 +20,18 @@ h1 {
 
 hr {
   margin: 2em auto;
+  color: blue;
 
 }
-
+p {
+  color: #474747;
+}
 .p {
   font-size: 13px;
 }
 
 .googleimage{
-text-align: center;
+text-align: left;
 }
 
 .nav {
@@ -40,9 +42,10 @@ text-align: center;
 }
 
 .nav ul {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   list-style: none;
+ 
 }
 
 
@@ -51,6 +54,7 @@ text-align: center;
   padding: 20px;
   text-decoration: none;
   font-size: 17px;
+
 }
 
 
@@ -97,7 +101,7 @@ text-decoration:underline;
 .column {
   float: left;
   width: 100%;
-  padding: 30px;
+  padding: 0px;
   height: auto;
   word-wrap: break-word;
 }
@@ -108,23 +112,152 @@ text-decoration:underline;
 
 .date{
   font-size:12px;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 40px;
   text-align:left;
 }
 
 .pheader{
   font-size:15px;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 40px;
 
 }
 
 .ptext{
   font-size:13px;
   width: 100%;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 40px;
+}
+
+#leftdate{
+  font-size: 13px;
 }
 
 .divtextright{
   padding:10px;
 }
 
+
+/* .firstdiv{
+   width: 1000px;
+} */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.firstleft {
+  transition: 0.3s;
+  width: 100%;
+  float:right;
+  padding:20px;
+}
+
+.firstleft:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.smalldiv {
+padding:2px;  
+}
+
+.guysdiv{
+display:flex;
+padding: 20px 0px 0px 5px;
+
+}
+
+.bigdiv{
+  display:flex;
+}
+
+.collection{
+  float:right;
+  font-size:13px;
+
+}
+
+.featuredsmalldiv{
+  display:flex;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.columnfeatured {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowfeatured:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowfeatured_column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.rowfeatured_row {
+  
+  margin: 20px -5px;
+}
+
+.rowfeatured_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 450px;
+  justify-content:center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 450px;
+    justify-content:center;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fcontainer {
+  padding: 2px 16px;
+}
+
+
+/* .rowfeatured{
+display:contents;
+
+} */
+
+
+.pagenotfound{
+  font-size: 20px;
+  padding: 100px 0 50px 0px;
+}
